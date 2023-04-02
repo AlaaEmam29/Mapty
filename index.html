@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map App</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin="" defer></script>
+
+
+
+    <script defer src="js/script.js" ></script>
+        <script defer src="js/oppArch.js" ></script>
+
+</head>
+<body>
+    <main class="row">
+        <sidebar class="sidebar">
+
+            <div class="details">
+                    <h2 class="location">Your location: waiting...</h2>
+
+                <h4 class="current__timer"> current__timer </h4>
+
+</div>
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <div class="workouts">
+                <form method="get" class="form hidden">
+            <div class="form__row">
+            <label class="form__label">Type</label>
+            <select class="form__input form__input--select">
+  <option selected>Choose</option>
+
+              <option value="running">Running</option>
+              <option value="cycling">Cycling</option>
+            </select>
+          </div>
+                      <div class="form__row">
+            <label class="form__label">Distance</label>
+            <input type="number" class="form__input form__input--distance" placeholder="Km" id="">
+          </div>
+
+                      <div class="form__row">
+            <label class="form__label">Duration</label>
+            <input type="number" class="form__input form__input--duration" placeholder="min" id="">
+          </div>
+
+                      <div class="form__row form--type">
+            <label class="form__label label--type">default</label>
+            <input type="number" class="form__input  form__input--type" placeholder="depend on your choose" id="">
+          </div>
+          <button type="submit" class="hidden">Ok</button>
+
+                </form>
+                   
+
+            </div>
+        </sidebar>
+ <div id="map"></div>
+
+
+    </main>
+    
+</body>
+</html>
